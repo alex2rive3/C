@@ -8,15 +8,15 @@
 using namespace std;
 
 int main(){
-	int vector[6];
+	int vector[4];
+	int suma=0;
 	srand(time(NULL));
-	for(int x= 0; x<=5;x++) {
+	for(int x = 0; x < 4;x ++) {
 		vector[x]= 1+rand()%10-1;
+		suma += vector[x];
+	}
+	for(int x = 0; x<4;x++) {
 		cout<<setw(3)<<vector[x];
 	}
-	cout<<"\nInvertido\n";
-	for(int x= 5; x>=0;x--) {
-		cout<<setw(3)<<vector[x];
-	}
+	cout<<"\nLa suma de todos los datos del vector es: "<<suma;
 }
-

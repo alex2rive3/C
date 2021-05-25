@@ -15,8 +15,7 @@ int main(){
 		cout<<setw(3)<<vector[x];
 	}
 	cout<<"\nInvertido\n";
-	for(int x= 5; x>=0;x--) {
+	for(int x = 5; x>=0;x--) {
 		cout<<setw(3)<<vector[x];
 	}
 }
-
